@@ -1,0 +1,9 @@
+# name is not mandatory
+- name: install and run nginx 
+  hosts: mongodb
+  tasks:
+  - name: install nginx
+    ansible.builtin.yum:
+      name: httpd
+      state: latest
+      
