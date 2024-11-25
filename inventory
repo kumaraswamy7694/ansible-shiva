@@ -1,1 +1,21 @@
-Hello!
+[mongodb]
+roboshop-us-dev-db-mongodb-01.kumaraswamy.xyz
+
+[mysql]
+roboshop-us-dev-db-mysql-01.kumaraswamy.xyz
+roboshop-us-dev-db-mysql-02.kumaraswamy.xyz
+roboshop-us-dev-db-mysql-03.kumaraswamy.xyz
+
+[cart]
+roboshop-us-prod-db-cart-01.kumaraswamy.xyz
+roboshop-us-prod-db-cart-02.kumaraswamy.xyz
+roboshop-us-prod-db-cart-03.kumaraswamy.xyz
+
+
+#group of group 
+[db:children]
+mongodb
+mysql
+
+[app:children]
+cart
