@@ -16,7 +16,7 @@
   tasks:
   - name: print no variable
     ansible.builtin.debug:
-    msg: "{{AGE}}"
+      msg: "{{AGE}}"
   - name: print string variable
     ansible.builtin.debug:
-    msg: "{{NAME}}"
+      msg: "{{NAME}}"
