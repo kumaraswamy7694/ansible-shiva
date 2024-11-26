@@ -3,8 +3,10 @@
   tasks:
   - name: check roboshop user exits or not
   # when you want to run linux command direct that in case fo ansible module  not available
+  # when the uesr does not exitst , ansible not considering it  
     ansible.builtin.command: id roboshop
     register: output
+    ignore_error: true
   - name: print the command output
     ansible.builtin.debug:
       msg: "output is :{{output}}"
