@@ -9,4 +9,7 @@
       state: installed  
     loop:
     - nginx
-    - postmap 
+    - postfix
+    - cyrus-sasl-plain
+    - mailx
+    
