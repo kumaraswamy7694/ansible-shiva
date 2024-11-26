@@ -1,0 +1,16 @@
+- name: testing varibles precedence
+  hosts: localhost
+  vars:
+    NAME: KUMAR-PLAY
+  tasks:
+  - name: variable at task level
+
+  # here is the command is not completed
+  # first preference is command line 
+  # second preference is at task level
+  # third preference from the files
+  # fourth is prompt
+  # fifth is playlevel 
+  # from the inventory
+  # roles
+  
