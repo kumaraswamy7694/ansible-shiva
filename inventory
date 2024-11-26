@@ -1,6 +1,9 @@
+172.31.89.9
 172.31.94.77
 
 [mongodb]
 roboshop-us-dev-db-mongodb-01.kumaraswamy.xyz
-
+[mongodb:vars]
+MONGO_USERNAME=mongodbadmin
+MONGO_DB=categories
 
