@@ -2,14 +2,13 @@
   hosts: localhost
   become: true
   tasks:
-  - name: install packages
-    ansible.builtin.yum:
-    ignore_errors:
-      name: "{{item}}"
-      state: installed  
-    loop:
-    - nginx
-    - postfix
-    - cyrus-sasl-plain
-    - mailx
-    
+    - name: install packages
+      ansible.builtin.yum:
+        name: "{{ item }}"
+        state: installed
+      ignore_errors: true
+      loop:
+        - nginx
+        - postfix
+        - cyrus-sasl-plain
+        - mailx
