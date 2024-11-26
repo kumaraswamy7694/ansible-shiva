@@ -1,0 +1,3 @@
+- name: varibles from prompt
+  hosts: local hosts
+  
