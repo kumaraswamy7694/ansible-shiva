@@ -1,5 +1,9 @@
 [mongodb]
 172.31.17.70 ansible_user=centos
+
+[mongodb:vars]
+MONGO_USERNAME=mongodbadmin
+MONGO_DB=categories
 ###logical grouping of servers in to inventory file
 #roboshop-us-dev-db-mongodb-01.kumaraswamy.shop
 #172.31.17.70
