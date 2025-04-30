@@ -4,3 +4,6 @@
   - name: print variable from comman line
     ansible.builtin.debug:
       msg: " the value of variable course is {{COURSE}}"
+  - name: print variable from comman line
+    ansible.builtin.debug:
+      msg: " the value of student name is {{STUDENTNAME}}"
